@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: -2px;
+  margin-top: -10px;
   padding: 0 0 0 0;
   height: 86px;
   font: 600 15px/18px Montserrat, arial, helvetica, sans-serif;
@@ -65,7 +65,7 @@
 .menu-mobile__btn > span,
 .menu-mobile__btn > span::before,
 .menu-mobile__btn > span::after {
-  //display: block;
+
   position: absolute;
   width: 24px;
   height: 1px;
@@ -131,8 +131,6 @@
   left: 0;
 }
 
-
-
 .main1_model {
   display: flex;
   align-items: center;
@@ -146,16 +144,145 @@
   align-items: center;
   flex-direction: column;
   font: 500 15px/18px Montserrat, arial, helvetica, sans-serif;
-  margin: -8px 0 0 0;
+  margin: -8px 0 25px 0;
 }
 
 .main1__car {
-  margin: 27px 0px 0 143px;
+  display: flex;
+  justify-content: center;
+  margin:auto;
+  width: 968px;
+  height: 450px;
+  background: url('img/tesla-png-tesla-png-hd-1636.png');
 }
 
 
-.main1__razgon {
+
+.main1__down_containers {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+.main1__down_razgon {
+  margin-left: 118px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  position: relative;
+  align-items: flex-end;
+}
+.main1__down_razgon-dannie {
+  display: flex;
+  font: 600 35px/43px 'Montserrat', arial, helvetica, sans-serif;
+  margin-left: 14px;
+  flex-direction: column;
+}
+.main1__down_razgon-dannie--razgona{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.main1__down_razgon--chego {
+  display: flex;
+  font: 400 12px/15px 'Montserrat', arial, helvetica, sans-serif;
+}
+.main1__down_razgon--ed-izm {
+  font: 600 20px/24px 'Montserrat', arial, helvetica, sans-serif;
+}
+.main1__down_razgon {
+  margin-left: 118px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: flex-end;
+}
+.main1__down_razgon-dannie {
+  display: flex;
+  font: 600 35px/43px 'Montserrat', arial, helvetica, sans-serif;
+  margin-left: 14px;
+  flex-direction: column;
+}
+
+
+
+.main1__down_zapas {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: flex-end;
+  margin-top: 8px;
+}
+.main1__down_zapas--road {
+  margin-top: 8px;
+}
+.main1__down_razgon-dannie {
+  display: flex;
+  font: 600 35px/43px 'Montserrat', arial, helvetica, sans-serif;
+  margin-left: 14px;
+  flex-direction: column;
+}
+.main1__down_zapas-dannie--zapasa{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.main1__down_zapas--chego {
+  display: flex;
+  font: 400 12px/15px 'Montserrat', arial, helvetica, sans-serif;
+}
+.main1__down_zapas--ed-izm {
+  font: 600 20px/24px 'Montserrat', arial, helvetica, sans-serif;
+}
+.main1__down_zapas {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: flex-start;
+}
+.main1__down_zapas-dannie {
+  display: flex;
+  font: 600 35px/43px 'Montserrat', arial, helvetica, sans-serif;
+  margin-left: 14px;
+  flex-direction: column;
+}
+
+.main1__down_testdrive {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+}
+
+.main1__down_testdrive-text{
+  margin-left: 7px;
+  font: 700 13px/16px 'Montserrat', arial, helvetica, sans-serif;
+}
+
+.main1__down_zakaz {
+  display: line-block;
+ font: 700 13px/16px 'Montserrat', arial, helvetica, sans-serif;
+ padding: 10px 45px;
+ background: #fff;
+ color: #E51937;
+ text-decoration: none;
+ border: 2px solid #E51937;
+ box-sizing: border-box;
+ transition: opacity .8s;
+ cursor: pointer;
+}
+
+.main2 {
+  display: flex;
+  justify-content: space-around;
+  background: url('img/2013-tesla-model-s-cockpit.png');
+}
+.main2__nazvanie {
+  font: 600 70px/85px 'Montserrat', arial, helvetica, sans-serif;
+  color: #E51937;
+  display: flex;
+
 }

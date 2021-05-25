@@ -1,6 +1,6 @@
 .wrapper {
   margin: auto;
-  width: 95%;
+  width: 100%;
 }
 
 .header {
@@ -32,6 +32,7 @@
 
 .menu__item {
   margin: 0 25px 0 0;
+  text-decoration: none;
 }
 
 .menu__item:last-child {
@@ -277,12 +278,197 @@
 
 .main2 {
   display: flex;
-  justify-content: space-around;
-  background: url('img/2013-tesla-model-s-cockpit.png');
+  justify-content: space-between;
+  margin-top: 80px;
+  width: 100%;
+  background: left bottom no-repeat url('img/2013-tesla-model-s-cockpit.png');
 }
 .main2__nazvanie {
   font: 600 70px/85px 'Montserrat', arial, helvetica, sans-serif;
   color: #E51937;
   display: flex;
+}
+
+.main2__opisanie1 {
+ display:flex;
+ background: #E51937;
+ color: #fff;
+ text-decoration: none;
+ box-sizing: border-box;
+ flex-direction: column;
+ width: 440px;
+ height: 900px;
+}
+
+.main2__nazvanie {
+  margin: 66px 0 0 70px;
+}
+
+
+.main2__opisanie1--zagolovok2 {
+  font: 600 30px/37px 'Montserrat', arial, helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding-top: 29px;
+  margin-bottom: 0;
+}
+.main2__opisanie1--paragraf2 {
+  font: 500 15px/18px 'Montserrat', arial, helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding-left: 60px;
+  padding-right: 72px;
+}
+
+
+
+.main2__prodispley_container {
+  margin-top: 46px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: flex-end;
+  margin-left: 60px;
+}
+.main2__prodispley--cifry {
+  display: flex;
+  flex-direction: column;
+  font: 600 35px/43px 'Montserrat', arial, helvetica, sans-serif;
+}
+.main2__prodispley_displey {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.main2__prodispley_dannie {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.main2__prodispley--text {
+  font: 600 20px/24px 'Montserrat', arial, helvetica, sans-serif;
+  margin-left: 10px;
+}
+.main2__prodispley--podparagraf {
+  font: 400 12px/15px 'Montserrat', arial, helvetica, sans-serif;
+}
+.main2__prodispley_image {
+  margin-top: 6px;
+  display: flex;
+}
+
+.main2__prowifi_container {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: flex-end;
+  margin-left: 57px;
+  padding-top: 10px;
+}
+.main2__prowifi_displey {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.main2__prowifi_dannie {
+  display: flex;
+  flex-direction: column;
+  margin-left: 19px;
+}
+.main2__prowifi--text {
+  font: 600 20px/24px 'Montserrat', arial, helvetica, sans-serif;
+}
+.main2__prowifi--podparagraf {
+  font: 400 12px/15px 'Montserrat', arial, helvetica, sans-serif;
+}
+.main2__prowifi_image {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 19px;
+}
+
+
+.main2__probagaj_container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: flex-end;
+  margin-left: 60px;
+}
+.main2__probagaj--cifry {
+  display: flex;
+  flex-direction: column;
+  font: 600 35px/43px 'Montserrat', arial, helvetica, sans-serif;
+}
+.main2__probagaj_bagaj {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.main2__probagaj_dannie {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.main2__probagaj--text {
+  font: 600 20px/24px 'Montserrat', arial, helvetica, sans-serif;
+  margin-left: 10px;
+}
+.main2__probagaj--podparagraf {
+  font: 400 12px/15px 'Montserrat', arial, helvetica, sans-serif;
+}
+.main2__probagaj_image {
+  display: flex;
+}
+
+
+
+.main2__zakaz {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin-top: 171px;
+
+
+}
+
+.main2__zakaz--info,
+.main2__zakaz--inf {
+  margin-left: 7px;
+  font: 700 13px/16px 'Montserrat', arial, helvetica, sans-serif;
+}
+
+.main2__down_zakaz {
+ font: 700 13px/16px 'Montserrat', arial, helvetica, sans-serif;
+ padding: 10px 45px;
+ background: #E51937;
+ color: #fff;
+ text-decoration: none;
+ border: 2px solid #fff;
+ box-sizing: border-box;
+ transition: opacity .8s;
+ cursor: pointer;
+}
+.main2__zakaz--info {
+  padding-right: 20px;
+}
+
+
+.main2__zakaz_circle {
+  transform: translateY(-50%);
+  width: 26px;
+  height: 22px;
+}
+.main2__zakaz--inf {
+  display: flex;
+  border-radius: 50%;
+  background-color: #E51937;
+  border: 2px solid #fff;
+  justify-content: center;
+
 
 }

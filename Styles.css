@@ -16,7 +16,7 @@
 .logo {
   width: 166px;
   height: 51px;
-  background: url('img/Tesla-Wordmark-Red.png')
+  background: url('img/Tesla-Wordmark-Red.png');
 }
 
 
@@ -74,7 +74,7 @@
   position: absolute;
   width: 24px;
   height: 1px;
-  background-color: #E51937;
+  background-color: #e51937;
   transition-duration: .25s;
   border-bottom: 4px;
 }
@@ -204,14 +204,6 @@
   position: relative;
   align-items: flex-end;
 }
-.main1__down_razgon-dannie {
-  display: flex;
-  font: 600 35px/43px 'Montserrat', arial, helvetica, sans-serif;
-  margin-left: 14px;
-  flex-direction: column;
-}
-
-
 
 .main1__down_zapas {
   display: flex;
@@ -262,12 +254,12 @@
   align-items: center;
 }
 
-.main1__down_testdrive-text{
+.main1__down_testdrive-text {
   margin-left: 7px;
   font: 700 13px/16px 'Montserrat', arial, helvetica, sans-serif;
 }
 
-.main1__down_zakaz {
+.main1__down_zakaz  {
   display: line-block;
  font: 700 13px/16px 'Montserrat', arial, helvetica, sans-serif;
  padding: 10px 45px;
@@ -278,6 +270,46 @@
  box-sizing: border-box;
  transition: opacity .8s;
  cursor: pointer;
+}
+
+.main1__down_zakaz:hover {
+  animation: ani 0.5s;
+}
+@keyframes ani {
+100% {
+  background: #E51937;
+  color: #fff;
+}
+  }
+.main2__down_zakaz:hover,
+.main3__down_zakaz:hover {
+  animation: ani2 0.5s;
+}
+@keyframes ani2 {
+  100%{
+background: #fff;
+color: #E51937;}
+}
+
+.main3__zakaz_circle:hover {
+  animation: anii 5s;
+}
+@keyframes anii {
+  100% {
+    background: fff;
+    color: #E51937;
+  }
+}
+.main2__zakaz--inf:hover,
+.main3__zakaz--inf:hover {
+  animation: aniii .5s;
+}
+@keyframes aniii {
+  100% {
+    background: #fff;
+    color: #E51937;
+  }
+
 }
 
 .main2 {
@@ -475,7 +507,7 @@
   justify-content: center;
 }
 
-/*зыезды*/
+/*звезды*/
 .main3__opisanie1_container--star {
 	display: inline-block;
 	font-size: 0;
@@ -515,6 +547,7 @@
   justify-content: center;
   padding-top: 20px;
   margin-bottom: 0;
+  margin-left: 50px;
 }
 .main3__opisanie1--paragraf3 {
   font: 500 15px/18px 'Montserrat', arial, helvetica, sans-serif;
@@ -643,6 +676,7 @@
   transform: translateY(-50%);
   width: 26px;
   height: 22px;
+  cursor: pointer;
 }
 .main3__zakaz--inf {
   display: flex;
@@ -650,4 +684,67 @@
   background-color: #E51937;
   border: 2px solid #fff;
   justify-content: center;
+}
+
+
+/*368 мобилка*/
+@media (max-width: 768px) {
+  .models,
+  .menu__item {
+    display: none;
+  }
+  .wrapper {
+    width: 265%;
+    padding: 0 0 0 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .logo {
+    width: 138px;
+    height: 42px;
+    background: url('img/Tesla-Wordmark-Red-mob.png')
+  }
+  .main2 {
+    background: none repeat url(img/2013-tesla-model-s-cockpit.png);
+    width: 100%;
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .main2__nazvanie {
+    display: none;
+  }
+
+  .main2__opisanie1 {
+    margin-bottom: -304px;
+    margin-top: 690px;
+    width: 100%;
+    height: 304px;
+  }
+  .main2__prodispley_container,
+  .main2__prowifi_container,
+  .main2__probagaj_container,
+  .main2__zakaz,
+  .main3__opisanie1_ocenka,
+  .main3__opisanie1_container--ocenok,
+  .main3__itogbezopasnosy_container,
+  .main3__zakaz {
+    display: none;
+  }
+  .main3__opisanie1 {
+    margin-top: 700px;
+    width: 100%;
+    height: 304px;
+  }
+  .main3 {
+    width: 100%;
+    flex-direction: column-reverse;
+    margin-top: 0;
+    background: no-repeat url(img/Car frame group.png);
+  }
+  .main3__nazvanie {
+    margin-top: 0;
+  }
+
 }
